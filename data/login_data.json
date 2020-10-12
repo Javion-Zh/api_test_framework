@@ -1,0 +1,13 @@
+{
+  "login_success":{
+    "mobile":"13911111111",
+    "code":"246810",
+    "status_code":201,
+    "message":"OK"
+  },
+  "login_both_None":{
+    "status_code":400,
+    "message":"Missing required parameter in the JSON body"
+  }
+
+}
