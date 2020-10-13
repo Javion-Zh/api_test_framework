@@ -15,5 +15,5 @@ suite.addTest(unittest.makeSuite(TestLogin))
 # 2.执行suite对象将数据写入文件流
 filename = "./report/" + time.strftime("%Y%m%d %H%M%S") + ".html"
 with open(filename,"wb") as f:
-    runner = HTMLTestRunner(f,title="测试报告",description="黑马头条接口测试")
+    runner = HTMLTestRunner(f,title="测试报告",description="接口测试")
     runner.run(suite)
