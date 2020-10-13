@@ -12,15 +12,14 @@
 """
 
 import unittest
-
 from case.TestCollections import TestCollections
 from case.TestITheimaLogin import TestLogin
 
-#1.创建 suite 对象
+# 1.创建 suite 对象
 suite = unittest.TestSuite()
-#2.suite 对象组织 TestLogin("test_login") + TestCollections("test_coolection")
+# 2.suite 对象组织 TestLogin("test_login") + TestCollections("test_collection")
 suite.addTest(TestLogin("test_login"))
-suite.addTest(TestCollections("test_coolection"))
-#3.运行测试套件 TextTestRunner()
+suite.addTest(TestCollections("test_collection"))
+# 3.运行测试套件 TextTestRunner()
 runner = unittest.TextTestRunner()
 runner.run(suite)

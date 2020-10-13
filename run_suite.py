@@ -4,7 +4,6 @@
 
 # 1.生成 suite 对象
 import unittest
-
 import time
 
 from case.TestITheimaLogin import TestLogin

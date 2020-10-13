@@ -17,12 +17,11 @@ class TestCollections(unittest.TestCase):
     def tearDown(self):
         self.session.close()
 
-
-    #测试函数
+    # 测试函数
     def test_coolection(self):
         # 收藏业务
         # response = collections对象.collec()
-        response = self.coll.collec(self.session,"1")
+        response = self.coll.collec(self.session, "1")
         # 断言业务
         print(response.json())
-        self.assertIn("OK",response.json().get("message"))
+        self.assertIn("OK", response.json().get("message"))

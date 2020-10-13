@@ -10,10 +10,9 @@ class Collections:
     def __init__(self):
         self.collec_url = app.BASE_URL + "article/collections"
 
-
-    def collec(self,session,id):
+    def collec(self, session, id):
         # 设置提交 token 的信息头,使用参数 headers
         # {"Content-Type":"application/json","Authorization":"Bearer TOKEN的值"}
-        my_headers = {"Content-Type":"application/json",
-                      "Authorization":"Bearer " + app.TOKEN}
-        return session.post(self.collec_url,json={"target":id},headers=my_headers)
+        my_headers = {"Content-Type": "application/json",
+                      "Authorization": "Bearer " + app.TOKEN}
+        return session.post(self.collec_url, json={"target": id}, headers=my_headers)
