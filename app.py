@@ -11,7 +11,7 @@ import os
 # 封装 URL 前缀
 import time
 
-BASE_URL = "http://ttapi.research.itcast.cn/app/v1_0/"
+BASE_URL = "http://127.0.0.1/app/v1_0/"
 # 获取项目的绝对路径
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))
 # 声明一个变量
